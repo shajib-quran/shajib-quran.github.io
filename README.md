@@ -1,2 +1,2 @@
-# MyQuran.github.io
+# MyQuran
 Arabic Language Study
