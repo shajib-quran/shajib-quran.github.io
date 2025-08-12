@@ -1,2 +1,2 @@
-# MyQuran
+MyQuran
 Arabic Language Study
