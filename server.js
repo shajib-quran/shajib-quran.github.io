@@ -27,14 +27,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-const supabase = require('./supabase'); // assuming you have supabase.js set up
-app.get('/api/quran', async (req, res) => {
-  const { data, error } = await supabase
-    .from('AlQuranFullFile')
-    .select('*')
-    .limit(10); // optional: limit results for testing
-
-  if (error) return res.status(500).json({ error: error.message });
-  res.json(data);
-});
