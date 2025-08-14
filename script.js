@@ -4,8 +4,8 @@ async function loadVerse(SurahVerse) {
 
   const container = document.getElementById('verseContainer');
   container.innerHTML = `
-    <p><strong>${SurahVerse}</strong></p>
-    <p>Arabic: ${verse.text_ar}</p>
-    <p>English: ${verse.text_en}</p>
+    <h2>${verse.SurahName}</h2>
+    <p><strong>Arabic:</strong> ${verse.VerseArabicText}</p>
+    <p><strong>Meaning:</strong> ${verse.VerseMeaning}</p>
   `;
 }
