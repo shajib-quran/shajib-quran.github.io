@@ -129,10 +129,22 @@ header button {
   .left-panel.open {
   transform: translateX(0); /*slides into view */
 }
-
+  .right-panel {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  background: #e0f2f1;
+  overflow-y: auto;
+  z-index: 1001;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transform: translateX(100%); /* ✅ hidden off-screen to the right */
+  transition: transform 0.4s ease; /* ✅ smooth slide-in */
+}
   .right-panel.open {
-    right: 0;
-    display: block;
+    transform: translateX(0); /*slides into view */
   }
 }
 
