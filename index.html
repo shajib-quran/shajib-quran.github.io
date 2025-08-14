@@ -6,8 +6,8 @@
 </head>
 <body>
   <h1>Verses from Surah</h1>
-  <input type="text" id="surahInput" placeholder="Enter Reference e.g S2V255">
-  <button onclick="loadVerses()">Load Verses</button>
+  <input type="text" id="verseInput" placeholder="Enter Reference (e.g. S2V255)">
+  <button onclick="loadVerse(document.getElementById('verseInput').value)">Load Verse</button>
   <div id="verseContainer"></div>
   
   <script src="script.js"></script>
