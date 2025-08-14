@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qur'anic Verse Viewer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Qur’anic Verse Viewer</title>
 </head>
 <body>
-  <header>
-    <h1>📖 Qur'anic Verse Viewer</h1>
-    <div class="filters">
-      <select id="surahFilter">
-        <option value="">All Surahs</option>
-        <!-- Surah options will be populated dynamically -->
-      </select>
-      <select id="themeFilter">
-        <option value="">All Themes</option>
-        <!-- Theme options will be populated dynamically -->
-      </select>
-    </div>
-  </header>
-
-  <main>
-    <div id="verseContainer">
-      <!-- Verses will be displayed here -->
-    </div>
-  </main>
-
-  <footer>
-    <p>Made with ❤️ to connect faith and technology</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <h1>Verses from Surah</h1>
+  <input type="text" id="surahInput" placeholder="Enter Surah name">
+  <button onclick="loadVerses()">Load Verses</button>
+  <div id="verseContainer"></div>
+  
   <script src="script.js"></script>
 </body>
 </html>
