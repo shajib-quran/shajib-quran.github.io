@@ -140,8 +140,8 @@ header button {
   z-index: 1001;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transform: translateX(100%); /* ✅ hidden off-screen to the right */
-  transition: transform 0.4s ease; /* ✅ smooth slide-in */
+  transform: translateX(100%); /*hidden off-screen to the right */
+  transition: transform 0.4s ease; /*smooth slide-in */
 }
   .right-panel.open {
     transform: translateX(0); /*slides into view */
