@@ -15,9 +15,9 @@ app.get('/api/quran/:SurahVerse', async (req, res) => {
 
   const { data, error } = await supabase
     .from('AlQuranFullFile')
-    .select('*')
+    .select('SurahName, VerseArabicText, VerseMeaning')
     .eq('SurahVerse', SurahVerse)
-    .single(); // Ensures only one record is returned
+    .single();
 
   if (error) return res.status(500).json({ error: error.message });
   res.json(data);
