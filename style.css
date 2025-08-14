@@ -74,6 +74,21 @@ header button {
   padding: 20px;
   flex: 1;
 }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 60px; /* same as header height */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent */
+  z-index: 999;
+}
+
+/* Show overlay when active */
+.overlay.active {
+  display: block;
+}
 
 /* Desktop layout */
 @media (min-width: 1024px) {
