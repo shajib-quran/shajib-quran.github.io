@@ -77,7 +77,7 @@ header button {
 .overlay {
   display: none;
   position: fixed;
-  top: 60px; /* same as header height */
+  top: 80px; /* same as header height */
   left: 0;
   right: 0;
   bottom: 0;
