@@ -111,24 +111,27 @@ header button {
 
 /* Mobile layout */
 @media (max-width: 1023px) {
-  .left-panel, .right-panel {
-    display: none;
-    position: fixed;
-    top: 80px;
-    bottom: 0;
-    width: 50vw;
-    background: #e0f2f1;
-    overflow-y: auto;
-    z-index: 1000;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-  }
+  .left-panel {
+  position: fixed;
+  top: 60px; /* below header */
+  bottom: 0;
+  left: 0;
+  width: 50vw;
+  background: #e0f2f1;
+  overflow-y: auto;
+  z-index: 1001;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transform: translateX(-100%); /*hidden off-screen */
+  transition: transform 0.3s ease;
+  display: block; /* always present, just off-screen */
+}
 
   .left-panel.open {
-    left: 0;
-    display: block;
-  }
+  left: 0;
+  display: block;
+  transform: translateX(0); /*slides into view */
+}
 
   .right-panel.open {
     right: 0;
