@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Qur’anic Verse Viewer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Qur'anic Layout</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Verses from Surah</h1>
-  <input type="text" id="verseInput" placeholder="Enter Reference (e.g. S2V255)">
-  <button onclick="loadVerse(document.getElementById('verseInput').value)">Load Verse</button>
-  <div id="verseContainer"></div>
-  
-  <script src="script.js"></script>
+  <header>
+    <button id="toggle-left">☰ Surahs</button>
+    <h1>Qur'anic Verse Viewer</h1>
+    <button id="toggle-right">☰ Notes</button>
+  </header>
+
+  <div class="layout">
+    <aside class="side-panel left-panel" id="left-panel">
+      <h2>Surah List</h2>
+      <ul>
+        <li>Al-Fatiha</li>
+        <li>Al-Baqarah</li>
+        <li>Aal Imran</li>
+        <li>An-Nisa</li>
+      </ul>
+    </aside>
+
+    <main class="body">
+      <h2>Verse Viewer</h2>
+      <p><strong>Arabic:</strong> اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ</p>
+      <p><strong>Translation:</strong> Allah – there is no deity except Him</p>
+    </main>
+
+    <aside class="side-panel right-panel" id="right-panel">
+      <h2>Notes & Tafsir</h2>
+      <p>This verse emphasizes the oneness of Allah...</p>
+      <textarea placeholder="Write your reflections..."></textarea>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Qur'anic Learning Platform</p>
+  </footer>
+
+  <script>
+    document.getElementById('toggle-left').onclick = () => {
+      document.getElementById('left-panel').classList.toggle('open');
+    };
+    document.getElementById('toggle-right').onclick = () => {
+      document.getElementById('right-panel').classList.toggle('open');
+    };
+  </script>
 </body>
 </html>
