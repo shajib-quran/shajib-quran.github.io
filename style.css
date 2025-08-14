@@ -1,1 +1,95 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
 
+header, footer {
+  background: #004d40;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  background: #00796b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Layout container */
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Panels and body */
+.side-panel {
+  background: #e0f2f1;
+  padding: 20px;
+}
+
+.body {
+  background: white;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .left-panel, .right-panel {
+    width: 250px;
+    display: block;
+  }
+
+  .body {
+    flex: 1;
+  }
+
+  #toggle-left, #toggle-right {
+    display: none;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 1023px) {
+  .left-panel, .right-panel {
+    display: none;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 80%;
+    background: #e0f2f1;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .left-panel.open {
+    left: 0;
+    display: block;
+  }
+
+  .right-panel.open {
+    right: 0;
+    display: block;
+  }
+
+  .body {
+    margin-top: 10px;
+  }
+}
