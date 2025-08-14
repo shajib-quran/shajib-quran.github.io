@@ -114,7 +114,7 @@ header button {
   .left-panel {
   position: fixed;
   top: 80px;
-  bottom: 60px;
+  bottom: 65px;
   left: 0;
   width: 50vw;
   background: #e0f2f1;
@@ -132,7 +132,7 @@ header button {
   .right-panel {
   position: fixed;
   top: 80px;
-  bottom: 60px;
+  bottom: 65px;
   right: 0;
   width: 50vw;
   background: #e0f2f1;
