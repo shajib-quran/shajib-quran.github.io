@@ -34,10 +34,6 @@ document.querySelector('.body').innerHTML = `
 `;
 
 const sections = {
-  home: `
-    <h2>Welcome to Qur’anic Explorer</h2>
-    <p>Start your journey with verse-by-verse study and memorization tools.</p>
-  `,
   courses: `
     <h2>Available Courses</h2>
     <div class="course-card">
@@ -65,3 +61,7 @@ function loadSection(sectionName) {
     body.classList.remove('fade-in');
   }, 300);
 }
+
+window.onload = () => {
+  loadSection('courses');
+};
