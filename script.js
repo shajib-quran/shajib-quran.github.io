@@ -1,11 +1,6 @@
-async function loadVerse(SurahVerse) {
-  const response = await fetch(`/api/quran/${SurahVerse}`);
-  const verse = await response.json();
-
-  const container = document.getElementById('verseContainer');
-  container.innerHTML = `
-    <h2>${verse.SurahName}</h2>
-    <p><strong>Arabic:</strong> ${verse.VerseArabicText}</p>
-    <p><strong>Meaning:</strong> ${verse.VerseMeaning}</p>
-  `;
-}
+document.getElementById('toggle-left').onclick = () => {
+document.getElementById('left-panel').classList.toggle('open'); 
+  };
+document.getElementById('toggle-right').onclick = () => {
+document.getElementById('right-panel').classList.toggle('open');
+  };
