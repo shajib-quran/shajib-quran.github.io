@@ -100,11 +100,13 @@ header button {
     position: fixed;
     top: 60px;
     bottom: 0;
-    width: 80%;
+    width: 50vw;
     background: #e0f2f1;
     overflow-y: auto;
     z-index: 1000;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
   }
 
   .left-panel.open {
