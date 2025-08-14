@@ -10,11 +10,14 @@ const PORT = process.env.PORT || 3000;
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 // Sample route to fetch verses
-app.get('/api/verses', async (req, res) => {
+app.get('/api/quran/:SurahVerse', async (req, res) => {
+  const { SurahVerse } = req.params;
+
   const { data, error } = await supabase
-    .from('verses')
+    .from('AlQuranFullFile')
     .select('*')
-    .limit(10);
+    .eq('SurahVerse', SurahVerse)
+    .single(); // Ensures only one record is returned
 
   if (error) return res.status(500).json({ error: error.message });
   res.json(data);
