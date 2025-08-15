@@ -9,8 +9,8 @@ header {
   height: 60px;
 }
 header, footer {
-  background: #004d40;
-  color: white;
+  background: #f9f9f9;
+  color: black;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
