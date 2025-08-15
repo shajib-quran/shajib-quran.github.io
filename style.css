@@ -48,15 +48,38 @@ header, footer {
   border-radius: 8px;
 }
 
-.course-card {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.course-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
 }
+
+.course-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.course-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
 .course-card h3 {
-  margin-top: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .course-card {
+    flex: 1 1 100%;
+  }
 }
 
 .fade-in {
