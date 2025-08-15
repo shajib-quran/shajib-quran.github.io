@@ -1,6 +1,6 @@
 const sections = {
   courses: `
-    <h2>Qur’anic Arabic Courses</h2>
+    <h4>Qur’anic Arabic Courses</h4>
     <div class="course-row">
       <div class="course-box">
         <div class="course-icon">🔰</div>
