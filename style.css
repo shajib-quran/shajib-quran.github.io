@@ -59,8 +59,8 @@ header, footer {
 }
 
 .course-box {
-  flex: 0 0 auto; /* ✅ prevents wrapping */
-  width: 120px;    /* ✅ fixed width for horizontal layout */
+  flex: 0 0 auto;
+  width: 120px;
   border: 1px solid #ccc;
   text-align: center;
   padding: 12px;
@@ -69,13 +69,12 @@ header, footer {
 }
 
 .course-icon {
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 6px;
 }
 
 .course-title {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 10px;
 }
 
 .fade-in {
