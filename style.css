@@ -59,11 +59,11 @@ header, footer {
 
 .course-box {
   flex: 0 0 auto;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: 1px solid #ccc;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   scroll-snap-align: start;
   box-sizing: border-box;
 }
