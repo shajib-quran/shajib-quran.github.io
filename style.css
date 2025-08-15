@@ -44,8 +44,7 @@ header, footer {
 }
 
 .menu-item:hover {
-  background: #00695c;
-  border-radius: 8px;
+  color: maroon;
 }
 
 .course-row {
@@ -60,7 +59,8 @@ header, footer {
 
 .course-box {
   flex: 0 0 auto;
-  width: 120px;
+  width: 100px;
+  height: 100px;
   border: 1px solid #ccc;
   text-align: center;
   padding: 12px;
@@ -74,7 +74,7 @@ header, footer {
 }
 
 .course-title {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .fade-in {
