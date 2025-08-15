@@ -73,17 +73,6 @@ header, footer {
   font-weight: bold;
 }
 
-/* Mobile: stack vertically */
-@media (max-width: 768px) {
-  .course-row {
-    flex-direction: column;
-  }
-
-  .course-box {
-    flex: 1 1 100%;
-  }
-}
-
 .fade-in {
   animation: fadeIn 0.3s ease;
 }
