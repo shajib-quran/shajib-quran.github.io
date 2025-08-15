@@ -1,26 +1,27 @@
 const sections = {
   courses: `
     <h2>Qur’anic Arabic Courses</h2>
-    <div class="course-grid">
-      <div class="course-card">
+    <div class="course-row">
+      <div class="course-box">
         <div class="course-icon">🔰</div>
-        <h3>Beginners Arabic</h3>
+        <div class="course-title">Beginners Arabic</div>
       </div>
-      <div class="course-card">
+      <div class="course-box">
         <div class="course-icon">📘</div>
-        <h3>Intermediate Arabic</h3>
+        <div class="course-title">Intermediate Arabic</div>
       </div>
-      <div class="course-card">
+      <div class="course-box">
         <div class="course-icon">🧠</div>
-        <h3>Advanced Arabic</h3>
+        <div class="course-title">Advanced Arabic</div>
       </div>
     </div>
   `,
-  
+
   study: `
     <h2>Study Guide</h2>
     <p>Explore thematic breakdowns, memorization tips, and tafsir references.</p>
   `,
+
   community: `
     <h2>Community</h2>
     <p>Connect with fellow learners, share reflections, and track progress.</p>
